@@ -5,8 +5,9 @@ import Home from "../pages/home/page";
 import ClubDetail from "../pages/club-detail/page";
 import Login from "../pages/login/page";
 import Signup from "../pages/signup/page";
-
 import FAQ from "../pages/faq/page";
+import Terms from "../pages/terms/page";
+import Privacy from "../pages/privacy/page";
 
 const routes: RouteObject[] = [
   {
@@ -16,6 +17,14 @@ const routes: RouteObject[] = [
   {
     path: "/faq",
     element: <FAQ />,
+  },
+  {
+    path: "/terms",
+    element: <Terms />,
+  },
+  {
+    path: "/privacy",
+    element: <Privacy />,
   },
   {
     path: "/clubs",

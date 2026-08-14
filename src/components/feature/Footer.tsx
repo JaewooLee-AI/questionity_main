@@ -22,8 +22,8 @@ export default function Footer() {
       links: [
         { label: "FAQ", href: "/faq" },
         { label: "1:1 문의하기", href: "/faq#contact" },
-        { label: "이용약관", href: "/" },
-        { label: "개인정보처리방침", href: "/" },
+        { label: "이용약관", href: "/terms" },
+        { label: "개인정보처리방침", href: "/privacy" },
       ],
     },
   ];
