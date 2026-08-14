@@ -130,7 +130,7 @@ export default function FAQPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50/60 font-sans">
+    <div className="min-h-screen flex flex-col bg-[#F6F5F1] font-sans">
       <Navbar />
 
       <main className="flex-1 pt-24 md:pt-32 pb-24">
@@ -138,13 +138,13 @@ export default function FAQPage() {
           
           {/* Header Banner */}
           <div className="text-center space-y-4 max-w-2xl mx-auto">
-            <span className="inline-block px-3.5 py-1 bg-amber-100 text-amber-800 text-xs font-bold rounded-none uppercase tracking-wider">
-              Help Center & Support
+            <span className="inline-block px-3.5 py-1 bg-[#111111] text-white text-xs font-bold rounded-none uppercase tracking-widest font-heading">
+              HELP CENTER & SUPPORT
             </span>
-            <h1 className="font-heading font-bold text-3xl md:text-5xl text-gray-950">
+            <h1 className="font-heading font-black text-3xl md:text-5xl text-[#111111] uppercase tracking-tight">
               자주 묻는 질문 (FAQ)
             </h1>
-            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+            <p className="text-gray-700 text-sm md:text-base leading-relaxed font-sans">
               독서모임 신청, 쿠폰 결제, 오프라인 아지트 이용에 관한 자주 묻는 질문들을 빠르게 찾아보세요.
             </p>
 
@@ -155,13 +155,13 @@ export default function FAQPage() {
                 placeholder="궁금하신 검색어를 입력해 보세요 (예: 쿠폰, 혜화역, 환불...)"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full px-5 py-4 pl-12 bg-white border border-gray-300 rounded-none shadow-sm text-sm text-gray-900 focus:outline-none focus:border-[#b91c1c] transition-all font-sans"
+                className="w-full px-5 py-4 pl-12 bg-white border border-[#111111] rounded-none shadow-xs text-sm text-[#111111] focus:outline-none focus:ring-1 focus:ring-[#111111] transition-all font-sans"
               />
-              <span className="absolute left-4 top-7 text-gray-400 text-lg">🔍</span>
+              <span className="absolute left-4 top-7 text-gray-500 text-lg">🔍</span>
               {searchQuery && (
                 <button
                   onClick={() => setSearchQuery("")}
-                  className="absolute right-4 top-7 text-xs text-gray-400 hover:text-gray-700 font-bold bg-gray-100 px-2 py-0.5 rounded-none"
+                  className="absolute right-4 top-7 text-xs text-gray-500 hover:text-[#111111] font-bold bg-[#EFECE6] px-2 py-0.5 rounded-none border border-[#D0CBC0]"
                 >
                   지우기
                 </button>
@@ -183,8 +183,8 @@ export default function FAQPage() {
                 onClick={() => setSelectedCategory(cat.id)}
                 className={`px-4 py-2.5 text-xs font-bold rounded-none transition-all ${
                   selectedCategory === cat.id
-                    ? "bg-[#b91c1c] text-white shadow-md"
-                    : "bg-white text-gray-700 hover:bg-gray-100 border border-gray-200/80"
+                    ? "bg-[#111111] text-white"
+                    : "bg-white text-gray-800 hover:bg-[#EFECE6] border border-[#D0CBC0]"
                 }`}
               >
                 {cat.label}

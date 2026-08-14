@@ -23,18 +23,18 @@ export default function HowItWorksSection() {
   }, []);
 
   return (
-    <section id="how-it-works" ref={sectionRef} className="w-full px-4 md:px-8 lg:px-12 py-20 md:py-28 bg-gradient-to-b from-gray-50 to-amber-50/30 border-t border-b border-gray-200/80 font-sans">
+    <section id="how-it-works" ref={sectionRef} className="w-full px-4 md:px-8 lg:px-12 py-20 md:py-28 bg-[#EFECE6] border-t border-b border-[#D8D4CA] font-sans">
       <div className="max-w-5xl mx-auto space-y-16">
         
         {/* Header */}
         <div className="text-center space-y-3">
-          <span className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out inline-block px-3.5 py-1 bg-amber-100 text-amber-800 text-xs font-bold tracking-wide uppercase rounded-none">
-            Payment & Coupon Guide
+          <span className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out inline-block px-3.5 py-1 bg-[#111111] text-white text-xs font-bold tracking-widest uppercase rounded-none font-heading">
+            PAYMENT & COUPON GUIDE
           </span>
-          <h2 className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out font-heading font-bold text-3xl md:text-4xl text-gray-950 leading-tight" style={{ transitionDelay: "0.1s" }}>
+          <h2 className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out font-heading font-black text-3xl md:text-4xl text-[#111111] uppercase tracking-tight leading-tight" style={{ transitionDelay: "0.1s" }}>
             이렇게 시작해요
           </h2>
-          <p className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out text-gray-600 text-base md:text-lg max-w-2xl mx-auto" style={{ transitionDelay: "0.2s" }}>
+          <p className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out text-gray-700 text-base md:text-lg max-w-2xl mx-auto font-sans" style={{ transitionDelay: "0.2s" }}>
             실시간 계좌이체, 카드등록, 네이버페이, 카카오페이로 <strong>쿠폰(2개 / 6개 / 10개)</strong>을 구매한 뒤, 각 독서방 결제 시 <strong>쿠폰 1장</strong>으로 간편하게 참여하는 방식입니다.
           </p>
         </div>

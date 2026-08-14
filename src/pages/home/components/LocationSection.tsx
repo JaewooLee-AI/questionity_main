@@ -35,22 +35,22 @@ export default function LocationSection() {
     <section
       id="location"
       ref={sectionRef}
-      className="w-full px-4 md:px-8 lg:px-12 py-20 md:py-28 bg-white border-t border-gray-200/80 font-sans"
+      className="w-full px-4 md:px-8 lg:px-12 py-20 md:py-28 bg-[#F6F5F1] border-t border-[#D8D4CA] font-sans"
     >
       <div className="max-w-5xl mx-auto space-y-12">
         {/* Header */}
         <div className="text-center space-y-3">
-          <span className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out inline-block px-3.5 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold tracking-wide uppercase rounded-none">
-            📍 Offline Lounge
+          <span className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out inline-block px-3.5 py-1 bg-[#111111] text-white text-xs font-bold tracking-widest uppercase rounded-none font-heading">
+            📍 OFFLINE LOUNGE
           </span>
           <h2
-            className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out font-heading font-bold text-3xl md:text-4xl text-gray-950 leading-tight"
+            className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out font-heading font-black text-3xl md:text-4xl text-[#111111] uppercase tracking-tight leading-tight"
             style={{ transitionDelay: "0.1s" }}
           >
             오시는 길
           </h2>
           <p
-            className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out text-gray-600 text-base md:text-lg max-w-xl mx-auto"
+            className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out text-gray-700 text-base md:text-lg max-w-xl mx-auto font-sans"
             style={{ transitionDelay: "0.2s" }}
           >
             퀘스처니티 오프라인 독서 아지트에서 깊이 있는 독서 토론과 대화를 경험해 보세요.

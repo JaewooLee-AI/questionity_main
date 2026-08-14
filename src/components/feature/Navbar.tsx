@@ -73,7 +73,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-background-50/95 backdrop-blur-md shadow-sm"
+          ? "bg-background-50/95 backdrop-blur-md border-b border-background-300/80 shadow-xs"
           : "bg-transparent"
       }`}
     >
@@ -82,11 +82,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" onClick={handleLogoClick} className="flex items-center gap-2 shrink-0">
             <span
-              className={`font-heading font-bold text-xl md:text-2xl tracking-tight transition-colors ${
-                scrolled ? "text-primary-500" : "text-background-50"
+              className={`font-heading font-extrabold text-xl md:text-2xl tracking-wider uppercase transition-colors ${
+                scrolled ? "text-foreground-950" : "text-background-50"
               }`}
             >
-              Questionity
+              QUESTIONITY
             </span>
           </Link>
 
@@ -97,8 +97,8 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className={`text-sm font-medium transition-colors hover:opacity-80 whitespace-nowrap ${
-                  scrolled ? "text-foreground-800" : "text-background-50"
+                className={`text-xs md:text-sm font-bold tracking-tight transition-colors hover:opacity-80 whitespace-nowrap ${
+                  scrolled ? "text-foreground-900 hover:text-primary-500" : "text-background-50"
                 }`}
               >
                 {link.label}

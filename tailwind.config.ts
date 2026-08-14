@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['"GmarketSansMedium"', '"GmarketSansBold"', '"Outfit"', '"Pretendard"', 'sans-serif'],
+        heading: ['"Pretendard"', '"Outfit"', '"GmarketSansBold"', 'sans-serif'],
         body: ['"Pretendard"', '"Noto Sans KR"', '-apple-system', 'sans-serif'],
         serif: ['"Playfair Display"', 'Georgia', 'serif'],
         label: ['"Pretendard"', '"Noto Sans KR"', 'sans-serif'],

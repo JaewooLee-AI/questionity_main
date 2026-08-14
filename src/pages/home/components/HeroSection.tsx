@@ -40,12 +40,12 @@ export default function HeroSection() {
       <div className="relative z-10 w-full px-4 md:px-8 lg:px-12 py-24 md:py-32">
         <div className="max-w-3xl mx-auto text-center">
           <div className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out" style={{ transitionDelay: "0.1s" }}>
-            <span className="inline-block bg-accent-500/90 text-background-50 text-xs font-semibold px-4 py-1.5 rounded-none mb-6 tracking-wide uppercase">
-              Question + Community
+            <span className="inline-block bg-white/10 backdrop-blur-sm text-amber-200 border border-amber-200/40 text-xs font-bold px-4 py-1.5 rounded-none mb-6 tracking-widest uppercase font-heading">
+              QUESTION + COMMUNITY
             </span>
           </div>
 
-          <h1 className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out font-heading font-bold text-3xl md:text-5xl lg:text-6xl text-background-50 leading-tight mb-6" style={{ transitionDelay: "0.2s" }}>
+          <h1 className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out font-heading font-extrabold text-3xl md:text-5xl lg:text-6xl text-white leading-tight mb-6 tracking-tight" style={{ transitionDelay: "0.2s" }}>
             {heroContent.headline.split("\n").map((line, i) => (
               <span key={i} className="block">
                 {line}
@@ -53,7 +53,7 @@ export default function HeroSection() {
             ))}
           </h1>
 
-          <p className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out text-background-100 text-base md:text-lg leading-relaxed mb-10 max-w-xl mx-auto" style={{ transitionDelay: "0.3s" }}>
+          <p className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out text-gray-200 text-base md:text-lg leading-relaxed mb-10 max-w-xl mx-auto font-sans" style={{ transitionDelay: "0.3s" }}>
             {heroContent.subheadline.split("\n").map((line, i) => (
               <span key={i} className="block">
                 {line}
@@ -64,13 +64,13 @@ export default function HeroSection() {
           <div className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out flex flex-col sm:flex-row items-center justify-center gap-3" style={{ transitionDelay: "0.4s" }}>
             <a
               href="#clubs"
-              className="bg-primary-500 text-background-50 font-semibold text-sm md:text-base px-8 py-3.5 rounded-none hover:bg-primary-600 transition-all duration-300 shadow-lg shadow-primary-500/25 whitespace-nowrap"
+              className="bg-[#8C2318] text-white font-bold text-sm md:text-base px-8 py-3.5 rounded-none hover:bg-[#721c13] transition-all duration-300 shadow-lg shadow-red-950/30 whitespace-nowrap tracking-wide uppercase border border-red-900/40"
             >
               {heroContent.ctaPrimary}
             </a>
             <a
-              href="#about"
-              className="bg-background-50/15 backdrop-blur-sm text-background-50 font-semibold text-sm md:text-base px-8 py-3.5 rounded-none hover:bg-background-50/25 border border-background-50/30 transition-all duration-300 whitespace-nowrap"
+              href="#how-it-works"
+              className="bg-white/10 backdrop-blur-md text-white font-bold text-sm md:text-base px-8 py-3.5 rounded-none hover:bg-white/20 border border-white/40 transition-all duration-300 whitespace-nowrap tracking-wide uppercase"
             >
               {heroContent.ctaSecondary}
             </a>

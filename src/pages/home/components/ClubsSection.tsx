@@ -371,30 +371,30 @@ export default function ClubsSection() {
   };
 
   return (
-    <section id="clubs" ref={sectionRef} className="w-full px-4 md:px-8 lg:px-12 py-20 md:py-28 bg-gray-50/50">
+    <section id="clubs" ref={sectionRef} className="w-full px-4 md:px-8 lg:px-12 py-20 md:py-28 bg-[#F6F5F1] border-t border-[#D8D4CA]">
       <div className="max-w-6xl mx-auto">
         {/* Main Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
           <div>
-            <span className="inline-block text-primary-600 text-xs font-bold tracking-wide uppercase mb-2">
-              Featured Reading Clubs
+            <span className="inline-block text-[#8C2318] text-xs font-extrabold tracking-widest uppercase mb-2 font-heading">
+              FEATURED READING CLUBS
             </span>
-            <h2 className="font-heading font-bold text-2xl md:text-4xl text-gray-950 leading-tight">
+            <h2 className="font-heading font-black text-2xl md:text-4xl text-[#111111] leading-tight uppercase tracking-tight">
               이번 달 추천 독서모임
             </h2>
-            <p className="text-sm text-gray-500 mt-2">
+            <p className="text-xs md:text-sm text-gray-600 mt-2 font-sans">
               클럽장이 직접 진행하는 3개의 상태별(모집중 · 진행중 · 종료) 실전 독서클럽 현황입니다.
             </p>
           </div>
 
           {/* Status Filter Tabs */}
-          <div className="flex items-center gap-1.5 bg-gray-200/60 p-1.5 rounded-none self-start sm:self-auto font-sans">
+          <div className="flex items-center gap-1 bg-[#EBE7DF] p-1 border border-[#D0CBC0] rounded-none self-start sm:self-auto font-sans">
             <button
               onClick={() => setActiveTab("all")}
               className={`px-3.5 py-1.5 text-xs font-bold rounded-none transition-all ${
                 activeTab === "all"
-                  ? "bg-white text-gray-900 shadow-sm"
-                  : "text-gray-600 hover:text-gray-900"
+                  ? "bg-[#111111] text-white"
+                  : "text-gray-700 hover:text-[#111111]"
               }`}
             >
               전체 보기 ({rooms.length})
@@ -403,8 +403,8 @@ export default function ClubsSection() {
               onClick={() => setActiveTab("recruiting")}
               className={`px-3.5 py-1.5 text-xs font-bold rounded-none transition-all ${
                 activeTab === "recruiting"
-                  ? "bg-amber-500 text-white shadow-sm"
-                  : "text-gray-600 hover:text-amber-700"
+                  ? "bg-[#8C2318] text-white"
+                  : "text-gray-700 hover:text-[#8C2318]"
               }`}
             >
               🔥 모집중 ({recruitingRooms.length})
@@ -413,8 +413,8 @@ export default function ClubsSection() {
               onClick={() => setActiveTab("in_progress")}
               className={`px-3.5 py-1.5 text-xs font-bold rounded-none transition-all ${
                 activeTab === "in_progress"
-                  ? "bg-emerald-600 text-white shadow-sm"
-                  : "text-gray-600 hover:text-emerald-700"
+                  ? "bg-[#3B4836] text-white"
+                  : "text-gray-700 hover:text-[#3B4836]"
               }`}
             >
               ⚡ 진행중 ({inProgressRooms.length})
@@ -423,8 +423,8 @@ export default function ClubsSection() {
               onClick={() => setActiveTab("completed")}
               className={`px-3.5 py-1.5 text-xs font-bold rounded-none transition-all ${
                 activeTab === "completed"
-                  ? "bg-gray-700 text-white shadow-sm"
-                  : "text-gray-600 hover:text-gray-900"
+                  ? "bg-gray-800 text-white"
+                  : "text-gray-700 hover:text-gray-900"
               }`}
             >
               ✅ 종료 ({completedRooms.length})
