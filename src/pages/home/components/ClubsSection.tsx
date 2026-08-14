@@ -298,6 +298,7 @@ export default function ClubsSection() {
             <img
               src={coverSrc}
               alt={room.book_title}
+              referrerPolicy="no-referrer"
               className="h-24 md:h-28 w-auto object-contain rounded-none shadow-sm group-hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute top-2 left-2 scale-90 origin-top-left">
@@ -635,6 +636,7 @@ export default function ClubsSection() {
                       <img
                         src={proxyBookCover(selectedRoom.book_image_url)}
                         alt={selectedRoom.book_title}
+                        referrerPolicy="no-referrer"
                         className="w-28 md:w-32 h-auto object-contain rounded-none shadow border border-gray-200/60 shrink-0 self-center sm:self-start"
                       />
                       <div className="space-y-2 flex-1">
