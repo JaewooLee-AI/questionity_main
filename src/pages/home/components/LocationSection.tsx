@@ -50,7 +50,7 @@ export default function LocationSection() {
             오시는 길
           </h2>
           <p
-            className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out text-gray-700 text-base md:text-lg max-w-xl mx-auto font-sans"
+            className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out text-gray-700 text-base md:text-lg max-w-2xl mx-auto font-sans break-keep"
             style={{ transitionDelay: "0.2s" }}
           >
             퀘스처니티 오프라인 독서 아지트에서 깊이 있는 독서 토론과 대화를 경험해 보세요.

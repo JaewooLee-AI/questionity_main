@@ -34,7 +34,7 @@ export default function HowItWorksSection() {
           <h2 className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out font-heading font-black text-3xl md:text-4xl text-[#111111] uppercase tracking-tight leading-tight" style={{ transitionDelay: "0.1s" }}>
             이렇게 시작해요
           </h2>
-          <p className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out text-gray-700 text-base md:text-lg max-w-2xl mx-auto font-sans" style={{ transitionDelay: "0.2s" }}>
+          <p className="animate-on-scroll opacity-0 translate-y-6 transition-all duration-700 ease-out text-gray-700 text-base md:text-lg max-w-2xl mx-auto font-sans break-keep" style={{ transitionDelay: "0.2s" }}>
             실시간 계좌이체, 카드등록, 네이버페이, 카카오페이로 <strong>쿠폰(2개 / 6개 / 10개)</strong>을 구매한 뒤, 각 독서방 결제 시 <strong>쿠폰 1장</strong>으로 간편하게 참여하는 방식입니다.
           </p>
         </div>
